@@ -34,6 +34,10 @@ This repository contains solutions to various Project Euler problems implemented
   - [Problem 20: Factorial Digit Sum](#problem-20-factorial-digit-sum)
   - [Problem 21: Amicable Numbers](#problem-21-amicable-numbers)
   - [Problem 22: Names Scores](#problem-22-names-scores)
+  - [Problem 23: Non-Abundant Sums](#problem-23-non-abundant-sums)
+  - [Problem 24: Lexicographic Permutations](#problem-24-lexicographic-permutations)
+  - [Problem 25: 1000-digit Fibonacci Number](#problem-25-1000-digit-fibonacci-number)
+  - [Problem 26: Reciprocal Cycles](#problem-26-reciprocal-cycles)
 
 ## Running Solutions
 
@@ -491,3 +495,85 @@ What is the total of all the name scores in the file?
 **Data Files:**
 
 - [0022_names.txt](./0022_names.txt)
+
+## Problem 23: Non-Abundant Sums
+
+**Description:**
+
+A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of $28$ would be $1 + 2 + 4 + 7 + 14 = 28$, which means that $28$ is a perfect number.
+
+A number $n$ is called deficient if the sum of its proper divisors is less than $n$ and it is called abundant if this sum exceed $n$.
+
+As $12$ is the smallest abundant number, $1 + 2 + 3 + 4 + 6 = 16$, the smallest number that can be written as the sum of two abundant numbers is $24$. By mathematical analysis, it can be shown that all integers greater than $28123$ can be written as the sum of two abundant numbers. However, this upper limit cannot be reduced any further by analysis even though it is known that the greatest number that cannot be expressed as the sum of two abundant numbers is less than this limit.
+
+Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
+
+**Solution Files:**
+
+- [0023_elixir.ex](./0023_elixir.ex)
+
+## Problem 24: Lexicographic Permutations
+
+**Description:**
+
+A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are:
+
+$$012\space021\space102\space120\space201\space210$$
+
+What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9?
+
+**Solution Files:**
+
+- [0024_elixir.ex](./0024_elixir.ex)
+
+## Problem 25: 1000-digit Fibonacci Number
+
+**Description:**
+
+The Fibonacci sequence is defined by the recurrence relation:
+
+$F_n = F_{n-1} + F_{n-2}$, where $F_1 = 1$ and $F_2 = 1$
+
+Hence the first 12 terms will be:
+$$F_1 = 1$$
+$$F_2 = 1$$
+$$F_3 = 2$$
+$$F_4 = 3$$
+$$F_5 = 5$$
+$$F_6 = 8$$
+$$F_7 = 13$$
+$$F_8 = 21$$
+$$F_9 = 34$$
+$$F_10 = 55$$
+$$F_11 = 89$$
+$$F_12 = 144$$
+
+The 12th term $F_12$ is the first te4rm to contain 3 digits.
+What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
+
+**Solution Files:**
+
+- [0025_elixir.ex](./0025_elixir.ex)
+
+## Problem 26: Reciprocal Cycles
+
+**Description:**
+A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:
+
+$$1/2 = 0.5$$
+$$1/3 = 0.(3)$$
+$$1/4 = 0.25$$
+$$1/5 = 0.2$$
+$$1/6 = 0.1(6)$$
+$$1/7 = 0.(142857)$$
+$$1/8 = 0.125$$
+$$1/9 = 0.(1)$$
+$$1/10 = 0.1$$
+
+Where $0.1(6)$ means $0.166666\dotsb$, and has a 1-digit recurring cycle. It can be seen that $1/7$ has a 6-digit recurring cycle.
+
+Find the value $d < 1000$ for which $1/d$ contains the longest recurring cycle in its decimal fraction part.
+
+**Solution Files:**
+
+- [0026_python.py](./0026_python.py)
