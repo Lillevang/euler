@@ -1,8 +1,6 @@
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.HashSet;
 
-public class Solution {
+class Solution {
 
     // How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
 

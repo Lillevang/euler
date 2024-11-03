@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SolutionParallel {
+class SolutionParallel {
 
     private static Set<Integer> getDivisors(int n) {
         var divisors = new HashSet<Integer>();

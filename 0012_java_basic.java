@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+class Solution {
 
     private static List<Integer> getDivisors(int n) {
         var divisors = new ArrayList<Integer>();

@@ -6,7 +6,7 @@ import os
 def parse_triangle() -> List[List[int]]:
     # Hack to allow debugging in VS Code
     script_dir = os.path.dirname(os.path.realpath(__file__))
-    triangle = os.path.join(script_dir, "triangle.txt")
+    triangle = os.path.join(script_dir, "018_triangle.txt")
 
     with open(triangle) as file:
         return list(reversed([[int(_) for _ in l.rstrip().split(" ")] for l in file.readlines()]))
