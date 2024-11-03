@@ -1,8 +1,11 @@
 object TriangularFactors {
 
-    def main(args: Array[String]): Unit = println {
-
-        triangularNumbers.find{ getNumberofFactors(_) > 500 }
+    def main(args: Array[String]): Unit = {
+        val result = triangularNumbers.find(getNumberofFactors(_) > 500)
+        result match {
+            case Some(number) => println(number)
+            case None => println("No result found")
+        }
     }
 
     def getNumberofFactors(number: BigInt) = {

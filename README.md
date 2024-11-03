@@ -486,4 +486,8 @@ What is the total of all the name scores in the file?
 
 **Solution Files:**
 
-- []()
+- [0022_python.py](./0022_python.py)
+
+**Data Files:**
+
+- [0022_names.txt](./0022_names.txt)

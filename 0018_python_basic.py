@@ -27,7 +27,7 @@ Find the maximum total from top to bottom of the triangle below:
 
 from typing import List
 
-def parse_triangle(path='./018_triangle.txt'):
+def parse_triangle(path='./0018_triangle.txt'):
     with open(path) as file:
         return [[int(_) for _ in l.rstrip().split(" ")] for l in file.readlines()]
 

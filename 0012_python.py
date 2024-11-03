@@ -31,4 +31,4 @@ def search2(maks):
         trianglenumber += count
     return trianglenumber, no_of_divs
 
-search2(500)
+print(search2(500)[0])
