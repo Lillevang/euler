@@ -577,3 +577,4 @@ Find the value $d < 1000$ for which $1/d$ contains the longest recurring cycle i
 **Solution Files:**
 
 - [0026_python.py](./0026_python.py)
+- [0026_scala.scala](./0026_scala.scala)
